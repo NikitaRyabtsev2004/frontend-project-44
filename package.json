@@ -19,5 +19,8 @@
   "homepage": "https://github.com/NikitaRyabtsev2004/frontend-project-44#readme",
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "bin": {
+  "brain-games": "bin/brain-games.js"
+  },
 }
