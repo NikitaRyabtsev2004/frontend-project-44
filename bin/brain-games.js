@@ -1,4 +1,3 @@
-import readlineSync from 'readline-sync';
-console.log("Welcome to the Brain Games!")
-readlineSync();
+import hello from '../src/cli.js';
+hello()
 

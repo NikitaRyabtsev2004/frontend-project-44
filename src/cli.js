@@ -1,4 +1,11 @@
-var readlineSync = require('readline-sync');
-var userName = readlineSync.question('May I have your name? ');
-console.log('Hi ' + userName + '!');
-export function readlineSync
+import readlineSync from 'readline-sync';
+export default function hello (){
+    console.log("Welcome to the Brain Games!")
+    const name = readlineSync.question('May I have your name? ');
+    console.log('Hello, ' + name + '!')
+}
+
+
+
+
+
