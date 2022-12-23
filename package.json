@@ -18,13 +18,15 @@
   },
   "homepage": "https://github.com/NikitaRyabtsev2004/frontend-project-44#readme",
   "dependencies": {
+    "-": "^0.0.1",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.26.0",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
   "bin": {
-    "brain-games": "./bin/brain-games.js"
+    "brain-games": "./bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
   "devDependencies": {
     "eslint": "^8.30.0",
