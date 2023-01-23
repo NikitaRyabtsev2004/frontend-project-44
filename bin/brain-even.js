@@ -1,5 +1,5 @@
-import evenOrOddFunction from '../src/index.js';
+import evenOrOddFunction from '../src/games/iseven.js';
 
 export default function evenOrOdd() {
   evenOrOddFunction();
-};
+}
