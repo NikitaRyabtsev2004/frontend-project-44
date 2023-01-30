@@ -1,12 +1,13 @@
 import readlineSync from 'readline-sync';
+import hello from './cli.js';
 import calculator from '../bin/brain-calc.js';
-import evenOrOdd from '../bin/brain-even.js';
 
 export default function brainGame() {
-  const game = readlineSync.question('');
-  if (game === 'brain-even') {
-    evenOrOdd();
-  } else if (game === 'brain-calc') {
-    calculator();
+  hello();
+  const gameName = readlineSync.question('game - ');
+  if (gameName === 'calculator') {
+    calculator()
+  } else {
+    console.log('error')
   }
 }

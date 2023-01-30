@@ -20,10 +20,10 @@ export default function generateExample() {
         break;
     }
     return result;
-  }
+  };
   function rn() {
     return Math.floor(Math.random() * 100 - 1);
-  }
+  };
   while (i < 3) {
     rn();
     const yry = [rn(), rn()];
@@ -38,11 +38,11 @@ export default function generateExample() {
       i += 1;
       if (i === 3) {
         console.log(`Congratulations, ${name}!`);
-      }
+      };
     } else {
       console.log(`'${Number(answerEx)}' is wrong answer ;(. Correct answer was ${trueAnswer(yry[0], operator[randomIndex], yry[1])}.\nLet's try again, ${name}`);
       break;
-    }
-  }
-}
+    };
+  };
+};
 generateExample();
