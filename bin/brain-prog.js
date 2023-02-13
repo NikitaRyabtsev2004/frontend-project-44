@@ -1,6 +1,5 @@
 import progression from '../src/games/progression.js';
 
-export default function prog() {
+export default function brainprogression() {
   progression();
 }
-prog();

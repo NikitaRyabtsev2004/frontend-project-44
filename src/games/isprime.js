@@ -1,9 +1,7 @@
 import readlineSync from 'readline-sync';
+import randomIntFromInterval from '../functions.js';
 
-export default function isPr() {
-  function randomIntFromInterval(min, max) {
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  };
+export default function isPrime() {
   let b = 0;
   const answerNo = 'no';
   const answerYes = 'yes';
@@ -14,12 +12,12 @@ export default function isPr() {
       for (let i = 2; i < rn1; i += 1) {
         if (rn1 % i === 0) {
           array.push(1);
-        };
+        }
       }
       array.push(2);
     } else {
       array.push(3);
-    };
+    }
     const question = (`Question: ${rn1}`);
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
@@ -37,5 +35,5 @@ export default function isPr() {
       break;
     }
     array.length = 0;
-  };
-};
+  }
+}

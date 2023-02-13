@@ -1,5 +1,5 @@
-import generateExample from '../src/games/calc.js';
+import calculator from '../src/games/calc.js';
 
-export default function calculator() {
-  generateExample();
+export default function braincalc() {
+  calculator();
 }

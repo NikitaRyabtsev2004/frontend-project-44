@@ -1,5 +1,7 @@
-import brainGame from '../src/index.js';
+#!/usr/bin/env node
+import indeX from '../src/index.js';
 
-function bra1ngame() {
-  brainGame();
-};
+function braingame() {
+  indeX();
+}
+braingame();

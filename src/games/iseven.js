@@ -1,12 +1,10 @@
 import readlineSync from 'readline-sync';
+import randomIntFromInterval from '../functions.js';
 
 export default function evenOrOddFunction() {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
   let i = 0;
   while (i < 3) {
-    const randomNumber = Math.floor(Math.random() * 100 - 1);
+    const randomNumber = randomIntFromInterval(1, 99);
     const questionRandomNum = (`Question: ${randomNumber}`);
     console.log(questionRandomNum);
     const answerRandomNum = readlineSync.question('Your answer: ');
@@ -35,4 +33,3 @@ export default function evenOrOddFunction() {
     }
   }
 }
-evenOrOddFunction();

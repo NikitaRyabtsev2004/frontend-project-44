@@ -1,14 +1,12 @@
 import readlineSync from 'readline-sync';
+import randomIntFromInterval from '../functions.js';
 
 export default function Nod() {
-  const name = readlineSync.question('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  console.log('Find the greatest common divisor of given numbers.');
   let i = 0;
   while (i < 3) {
-    let x = Math.floor(Math.random() * 100 - 1);
-    let y = Math.floor(Math.random() * 100 - 1);
-    const question = (`Question: ${x} ${y};`)
+    let x = randomIntFromInterval(1, 99);
+    let y = randomIntFromInterval(1, 99);
+    const question = (`Question: ${x} ${y};`);
     if ((typeof x !== 'number') || (typeof y !== 'number')) return false;
     while (y) {
       const t = y;
@@ -30,4 +28,3 @@ export default function Nod() {
     }
   }
 }
-Nod();
