@@ -1,20 +1,20 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "description": "27islamix@gmail.com, Islam",
+  "description": "nekit100118@gmail.com, NikitaRyabtsev2004",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Islam283/frontend-project-44.git"
+    "url": "https://github.com/NikitaRyabtsev2004/frontend-project-44.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Islam283/frontend-project-44/issues"
+    "url": "https://github.com/NikitaRyabtsev2004/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/Islam283/frontend-project-44#readme",
+  "homepage": "https://github.com/NikitaRyabtsev2004/frontend-project-44#readme",
   "type": "module",
   "bin": {
     "brain-calc": "bin/brain-calc.js",
