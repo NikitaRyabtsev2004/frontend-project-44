@@ -1,40 +1,35 @@
 {
   "name": "@hexlet/code",
   "version": "1.0.0",
-  "type": "module",
-  "description": "[![Actions Status](https://github.com/NikitaRyabtsev2004/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/NikitaRyabtsev2004/frontend-project-44/actions)",
-  "main": "index.js",
+  "description": "27islamix@gmail.com, Islam",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NikitaRyabtsev2004/frontend-project-44.git"
+    "url": "git+https://github.com/Islam283/frontend-project-44.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NikitaRyabtsev2004/frontend-project-44/issues"
+    "url": "https://github.com/Islam283/frontend-project-44/issues"
   },
-  "homepage": "https://github.com/NikitaRyabtsev2004/frontend-project-44#readme",
+  "homepage": "https://github.com/Islam283/frontend-project-44#readme",
+  "type": "module",
+  "bin": {
+    "brain-calc": "bin/brain-calc.js",
+    "brain-even": "bin/brain-even.js",
+    "brain-games": "bin/brain-games.js",
+    "brain-gcd": "bin/brain-gcd.js",
+    "brain-prime": "bin/brain-prime.js",
+    "brain-progression": "bin/brain-progression.js"
+  },
   "dependencies": {
-    "-": "^0.0.1",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
-  "bin": {
-    "brain-games": "./bin/brain-games.js",
-    "brain-even": "./bin/brain-even.js",
-    "brain-calc": "./bin/brain-calc.js",
-    "brain-gcd": "./bin/brain-gcd.js",
-    "brain-progression": "./bin/brain-progression.js",
-    "brain-prime": "./bin/brain-prime.js."
-  },
   "devDependencies": {
-    "eslint": "^8.30.0",
-    "eslint-plugin-jest": "^27.1.7",
-    "eslint-plugin-spellcheck": "^0.0.20"
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-plugin-import": "2.27.5"
   }
 }

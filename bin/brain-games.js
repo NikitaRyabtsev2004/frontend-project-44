@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-import indeX from '../src/index.js';
 
-function braingame() {
-  indeX();
-}
-braingame();
+import { getUserName } from '../src/cli.js';
+
+console.log('Welcome to the Brain Games!');
+const userName = getUserName();
+console.log(`Hello, ${userName}!`);

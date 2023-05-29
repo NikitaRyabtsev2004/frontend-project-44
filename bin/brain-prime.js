@@ -1,5 +1,14 @@
-import isPrime from '../src/games/isprime.js';
+#!/usr/bin/env node
 
-export default function brainprime() {
-  isPrime();
-}
+import game from '../src/games/game-prime.js';
+import rules from '../src/index.js';
+import { getUserName } from '../src/cli.js';
+
+console.log('Welcome to the Brain Games!');
+const userName = getUserName();
+console.log(`Hello, ${userName}!`);
+
+const gameRules = rules();
+gameRules.setUserName(userName);
+gameRules.reset();
+game(gameRules).start();

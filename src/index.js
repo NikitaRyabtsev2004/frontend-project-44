@@ -1,14 +1,56 @@
-import readlineSync from 'readline-sync';
-import hello from './cli.js';
-import braincalc from '../bin/brain-calc.js';
-import braineven from '../bin/brain-even.js';
-import brainGcd from '../bin/brain-gcd.js';
-import brainprime from '../bin/brain-prime.js';
-import brainprogression from '../bin/brain-prog.js';
+export default () => {
+  const MAX_FAIL_COUNT = 0;
+  const MIN_SUCCESS_COUNT = 3;
+  let userName = null;
+  let successCount = 0;
+  let failCount = 0;
 
-export default function hello() {
-  console.log('Welcome to the Brain Games!');
-  const name = readlineSync.question('May I have your name? ');
-  return name;
-}
+  function reset() {
+    successCount = 0;
+    failCount = 0;
+  }
 
+  function finishWithLoose() {
+    console.log(`Let's try again, ${userName}!`);
+    reset();
+  }
+
+  function finishWithWin() {
+    console.log(`Congratulations, ${userName}!`);
+    reset();
+  }
+
+  function check({ rightAnswer, answer }, cb) {
+    if (answer === rightAnswer.toString()) {
+      console.log('Correct!');
+      successCount += 1;
+    } else {
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'.`);
+      failCount += 1;
+    }
+
+    if (failCount > MAX_FAIL_COUNT) {
+      finishWithLoose();
+    } else if (successCount >= MIN_SUCCESS_COUNT) {
+      finishWithWin();
+    } else {
+      cb();
+    }
+  }
+
+  return {
+    userName,
+
+    setUserName(name) {
+      userName = name;
+    },
+
+    check({ rightAnswer, answer }, cb) {
+      check({ rightAnswer, answer }, cb);
+    },
+
+    reset() {
+      reset();
+    },
+  };
+};

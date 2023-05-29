@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import game from '../src/games/game-even.js';
+import game from '../src/games/game-progression.js';
 import rules from '../src/index.js';
 import { getUserName } from '../src/cli.js';
 
