@@ -1,11 +1,11 @@
 import { getAnswerForQuestion } from '../cli.js';
-import getRandomNumber from '../functions/randomNumber.js';
+import getRandomNumber from '../utils/randomNumber.js';
 
 export default (rules) => {
-  const Operations = ['+', '-', '*'];
+  const operations = ['+', '-', '*'];
 
   function getOperation() {
-    return Operations[getRandomNumber(2)];
+    return operations[getRandomNumber(2)];
   }
 
   function next() {

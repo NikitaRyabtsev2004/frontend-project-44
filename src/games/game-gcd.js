@@ -1,6 +1,6 @@
 import { getAnswerForQuestion } from '../cli.js';
-import getGCD from '../functions/gcd.js';
-import getRandomNumber from '../functions/randomNumber.js';
+import getGCD from '../utils/gcd.js';
+import getRandomNumber from '../utils/randomNumber.js';
 
 export default (rules) => {
   function next() {

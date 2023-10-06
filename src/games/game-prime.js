@@ -1,6 +1,6 @@
 import { getAnswerForQuestion } from '../cli.js';
-import isPrime from '../functions/isPrime.js';
-import getRandomNumber from '../functions/randomNumber.js';
+import isPrime from '../utils/isPrime.js';
+import getRandomNumber from '../utils/randomNumber.js';
 
 export default (rules) => {
   function next() {

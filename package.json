@@ -25,6 +25,7 @@
     "brain-progression": "bin/brain-progression.js"
   },
   "dependencies": {
+    "loader": "^2.1.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
