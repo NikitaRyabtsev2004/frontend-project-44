@@ -19,13 +19,15 @@ make install
 5. To start the game "geometric progression" type make brain-progression;
 6. To start the prime number game, enter the make brain-prime command;
 ---
-Rules:
-You need to answer correctly 3 times to win.
----
 GAMES:
 ---
+Rules:
+You need to answer correctly 3 times to win.
+
 ## 1. Brain-calc:
+```
 As the name suggests, the rules of this game are very simple, you have to take on the role of a simple calculator and count the examples.
+```
 ---
 ## 2. Brain-even:
 In this game, you need to calculate whether it is even or not, writing if even yes, or no if odd.
