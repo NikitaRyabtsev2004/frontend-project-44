@@ -1,9 +1,15 @@
-Brain-games
+### Brain-games
 ---
 Download:
-1. git clone https://github.com/NikitaRyabtsev2004/frontend-project-44.git
-2. cd frontend-project-44
-3. make install
+```bash
+git clone https://github.com/NikitaRyabtsev2004/frontend-project-44.git
+```
+```bash
+cd frontend-project-44
+```
+```bash
+make install
+```
 ---
 Start:
 1. To start the greeting, enter the make brain-games command;
