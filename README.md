@@ -24,21 +24,19 @@ GAMES:
 Rules:
 You need to answer correctly 3 times to win.
 
-## 1. Brain-calc:
-```
+# 1. Brain-calc:
 As the name suggests, the rules of this game are very simple, you have to take on the role of a simple calculator and count the examples.
-```
 ---
-## 2. Brain-even:
+# 2. Brain-even:
 In this game, you need to calculate whether it is even or not, writing if even yes, or no if odd.
 ---
-## 3. Brain-gcd:
+# 3. Brain-gcd:
 You will be given 2 numbers and you need to specify their greatest or common divisor.
 ---
-## 4. Brain-prime:
+# 4. Brain-prime:
 You need to answer whether the number is prime yes if simple and no if not prime.
 ---
-## 5. Brain-progression:
+# 5. Brain-progression:
 You will be shown a series of numbers with a missing number in place of which there will be dots. You need to specify the number that should be in the gap.
 ---
 Have a good time.
