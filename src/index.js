@@ -10,6 +10,11 @@ export default () => {
     failCount = 0;
   }
 
+  function finishWithLoose() {
+    console.log(`Let's try again, ${userName}!`);
+    reset();
+  }
+
   function finishWithWin() {
     console.log(`Congratulations, ${userName}!`);
     reset();
@@ -25,7 +30,7 @@ export default () => {
     }
 
     if (failCount > MAX_FAIL_COUNT) {
-      reset();
+      finishWithLoose();
     } else if (successCount >= MIN_SUCCESS_COUNT) {
       finishWithWin();
     } else {
